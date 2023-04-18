@@ -1,12 +1,6 @@
 @WEB
-Feature: Verify  signup and login functionality for Vita Mojo demo website
+Feature: Verify  Compose function of Gmail
 
-  Scenario: Verify Successful signup for Vita Mojo Demo website
-    Given User launch application "https://fego.vmos-demo.com/"
-    And  User provide details on signup pages
-    Then User should get successful signup message
-
-  Scenario: Verify Successful login for Vita Mojo Demo Website
-    Given User launch application "https://fego.vmos-demo.com/"
-    And User Provide username "Demo@gmail.com" and password "Demo@123"
-    Then User should be able to login successfully
+  Scenario: Verify Compose email functionality of Gmail
+    Given User launch application "https://gmail.com"
+    Then User should be able to send email successfully
